@@ -6,10 +6,13 @@ DOMAIN-SUFFIX,time.windows.com
 DOMAIN-SUFFIX,lanzov.com
 DOMAIN-SUFFIX,hao123.com
 DOMAIN-SUFFIX,gofile.io
-
+DOMAIN-SUFFIX,oracleinfinity.io
+DOMAIN-SUFFIX,oraclecloud.com
 # 域名关键字匹配
 DOMAIN-KEYWORD,baidu
 DOMAIN-KEYWORD,gofile
+DOMAIN-KEYWORD,oracleinfinity
+DOMAIN-KEYWORD,oraclecloud.com
 # IP段匹配
 IP-CIDR,219.146.1.66/32,no-resolve
 
@@ -489,7 +492,7 @@ DOMAIN-SUFFIX,nuomi.com
 DOMAIN-SUFFIX,onedns.net
 DOMAIN-SUFFIX,oneplus.com
 DOMAIN-SUFFIX,onlinedown.net
-DOMAIN-SUFFIX,oracle.com
+DOMAIN-SUFFIX,.com
 DOMAIN-SUFFIX,oschina.net
 DOMAIN-SUFFIX,ourdvs.com
 DOMAIN-SUFFIX,polyv.net
