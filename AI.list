@@ -1,30 +1,78 @@
-# 内容：OpenAi Bard anthropic
-# 域名关键字匹配
+# ==================================================
+# AI Services Enhanced Ruleset File
+# 适用于 OpenClash 的 rule-provider 调用
+# 格式: classical (包含多种规则类型)
+# Generated on: 2025-07-30
+# ==================================================
+
+# --------------------------------------------------
+# 1. 关键词匹配 (Broad Keyword Match)
+# --------------------------------------------------
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,anthropic
-DOMAIN-KEYWORD,Claude
+DOMAIN-KEYWORD,claude
+DOMAIN-KEYWORD,gemini
+DOMAIN-KEYWORD,bard
 DOMAIN-KEYWORD,grok
-# 域名后缀匹配
-DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-KEYWORD,cursor
+DOMAIN-KEYWORD,perplexity
+DOMAIN-KEYWORD,poe
+
+# --------------------------------------------------
+# 2. 域名后缀匹配 (Specific Domain Suffix Match)
+# --------------------------------------------------
+
+# --- OpenAI / ChatGPT ---
+DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,chat.openai.com
 DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,challenges.cloudflare.com
-DOMAIN-SUFFIX,client-api.arkoselabs.com
-DOMAIN-SUFFIX,events.statsigapi.net
-DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,identrust.com
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,stripe.com
+
+# --- Anthropic (Claude) ---
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+
+# --- Google (Gemini / Bard) ---
+DOMAIN-SUFFIX,ai.google
 DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,makersuite.google.com
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai.com
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,voice.google.com
+
+# --- xAI (Grok) ---
 DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,x.ai
+
+# --- Perplexity ---
+DOMAIN-SUFFIX,perplexity.ai
+
+# --- Cursor (AI Editor) ---
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursor.so
+
+# --- Hugging Face (模型社区) ---
+DOMAIN-SUFFIX,huggingface.co
+DOMAIN-SUFFIX,huggingface.com
+
+# --- Poe (AI聚合平台) ---
+DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,poecdn.net
+
+# --- 必要的功能性依赖 (验证码, 认证, CDN 等) ---
+# 以下是保证上述AI服务能正常登录和使用的关键组件
+DOMAIN-SUFFIX,challenges.cloudflare.com # Cloudflare 验证码
+DOMAIN-SUFFIX,client-api.arkoselabs.com # Arkose Labs 验证码 (ChatGPT 登录常用)
+DOMAIN-SUFFIX,events.statsigapi.net # OpenAI 功能开关
+DOMAIN-SUFFIX,featuregates.org # OpenAI 功能开关
+DOMAIN-SUFFIX,identrust.com # OpenAI SSL证书验证
+DOMAIN-SUFFIX,intercom.io # 部分服务的在线客服组件, 可能影响登录
+DOMAIN-SUFFIX,intercomcdn.com # Intercom的CDN
+DOMAIN-SUFFIX,sentry.io # 部分服务使用的错误上报, 可能会影响功能
+DOMAIN-SUFFIX,auth0.com # 注意: 被多个网站用于登录, 可能会影响非AI网站, 但为OpenAI等必须
+DOMAIN-SUFFIX,stripe.com # 注意: 支付平台, 仅在需要订阅付费时需要
 DOMAIN-SUFFIX,voice.google.com
