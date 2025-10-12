@@ -19,6 +19,7 @@ DOMAIN-KEYWORD,perplexity
 DOMAIN-KEYWORD,poe
 DOMAIN-KEYWORD,twitter
 DOMAIN-KEYWORD,x.com
+DOMAIN-KEYWORD,truthsocial  # <<<< 新增：Truth Social 关键词
 
 # --------------------------------------------------
 # 2. 域名后缀匹配 (Specific Domain Suffix Match)
@@ -45,7 +46,7 @@ DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,makersuite.google.com
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN-SUFFIX,voice.google.com
-DOMAIN-SUFFIX,aistudio.google.com 
+DOMAIN-SUFFIX,aistudio.google.com 
 DOMAIN-SUFFIX,ai.google.dev
 
 # --- xAI (Grok) ---
@@ -71,6 +72,10 @@ DOMAIN-SUFFIX,twitter.com
 DOMAIN-SUFFIX,twitter.co
 DOMAIN-SUFFIX,x.com
 DOMAIN-SUFFIX,x.com.co
+
+# --- Truth Social ---  # <<<< 新增：Truth Social 域名
+DOMAIN-SUFFIX,truthsocial.com
+DOMAIN-SUFFIX,tmtg.com
 
 # --- 必要的功能性依赖 (验证码, 认证, CDN 等) ---
 # 以下是保证上述AI服务能正常登录和使用的关键组件
