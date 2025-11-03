@@ -1,0 +1,50 @@
+==================================================
+
+Talkatone 专属规则集 (V3 - 最终修复版)
+
+适用于 OpenClash 的 rule-provider 调用 (behavior: domain/classical)
+
+包含 App 核心信令域名和必要的依赖域名。
+
+Generated on: 2025-11-02
+
+==================================================
+
+--------------------------------------------------
+
+1. 核心信令服务器 (DOMAIN 优先级最高，用于精确匹配 VOIP 流量)
+
+--------------------------------------------------
+
+这些规则是为了解决 App 流量 (xmpp-sjc-xx.tktn.be) 走错策略组的问题。
+
+使用精确的 DOMAIN 规则可以确保它不会被其他泛规则捕获。
+
+DOMAIN,a1.tktn.be
+DOMAIN,xmpp-sjc-07-02.tktn.be
+DOMAIN,xmpp-sjc-04-02.tktn.be
+DOMAIN,lb-iad-01.tktn.be
+DOMAIN,relay-sjc-05.tktn.be
+
+--------------------------------------------------
+
+2. 域名后缀匹配 (Domain Suffix - 覆盖主要业务和网站)
+
+--------------------------------------------------
+
+DOMAIN-SUFFIX,talkatone.com
+DOMAIN-SUFFIX,ooma.com
+DOMAIN-SUFFIX,tktn.be # Talkatone 核心 VOIP 域
+
+--------------------------------------------------
+
+3. 功能性依赖 (Functional Dependencies - 登录/统计/验证)
+
+--------------------------------------------------
+
+确保所有与 Talkatone 相关的登录和后台 API 走纯净线路
+
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,appleid.apple.com
+DOMAIN-SUFFIX,facebook.com
