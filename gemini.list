@@ -1,23 +1,18 @@
-# ==================================================# Google AI Services (Gemini / Bard) Enhanced Ruleset# 包含 Google AI 服务及其【全部必要核心依赖】# 适用于 OpenClash 的 rule-provider 调用# 格式: classical (包含多种规则类型)# Generated on: 2025-11-17# ==================================================# --------------------------------------------------# 1. 关键词匹配 (Broad Keyword Match - Google AI)# --------------------------------------------------DOMAIN-KEYWORD,gemini
+# Google AI Services (Gemini Only) - Fixed Version
+DOMAIN-KEYWORD,gemini
 DOMAIN-KEYWORD,bard
 DOMAIN-KEYWORD,deepmind
-DOMAIN-KEYWORD,google
-# --------------------------------------------------# 2. 域名后缀匹配 (Specific Domain Suffix Match - 核心与 AI)# --------------------------------------------------# --- Google (Gemini / Bard) 核心 AI 服务 ---
+
+# Gemini 核心域名
 DOMAIN-SUFFIX,ai.google
-DOMAIN-SUFFIX,bard.google.com
-DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,bard.google.com
 DOMAIN-SUFFIX,makersuite.google.com
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN-SUFFIX,aistudio.google.com
 DOMAIN-SUFFIX,ai.google.dev
+DOMAIN-SUFFIX,deepmind.com
 
-# --- 核心 Google 基础设施 (必不可少) ---
-# 这些域名是 Google 账户认证、静态资源加载、以及大部分服务的底层依赖，必须走代理。
-DOMAIN-SUFFIX,google.com
-DOMAIN-SUFFIX,googleusercontent.com
-DOMAIN-SUFFIX,gstatic.com
-DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,accounts.google.com
-DOMAIN-SUFFIX,google.cn # 包含以应对部分地区认证跳转
-DOMAIN-SUFFIX,google.co.jp # 包含以应对部分地区认证跳转
+# 必要的认证域名(精确匹配)
+DOMAIN,accounts.google.com
+DOMAIN,accounts.youtube.com
