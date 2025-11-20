@@ -1,18 +1,28 @@
-# Google AI Services (Gemini Only) - Fixed Version
-DOMAIN-KEYWORD,gemini
-DOMAIN-KEYWORD,bard
-DOMAIN-KEYWORD,deepmind
+# ==============================================
+# Google Gemini & AI Studio 专用规则集 (修复版)
+# ==============================================
 
-# Gemini 核心域名
-DOMAIN-SUFFIX,ai.google
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,bard.google.com
-DOMAIN-SUFFIX,makersuite.google.com
-DOMAIN-SUFFIX,generativelanguage.googleapis.com
-DOMAIN-SUFFIX,aistudio.google.com
-DOMAIN-SUFFIX,ai.google.dev
-DOMAIN-SUFFIX,deepmind.com
+# 1. 核心服务域名 (网页版与开发平台)
+- DOMAIN-SUFFIX,gemini.google.com,Gemini
+- DOMAIN-SUFFIX,aistudio.google.com,Gemini
+- DOMAIN-SUFFIX,ai.google.dev,Gemini
+- DOMAIN-SUFFIX,makersuite.google.com,Gemini
+- DOMAIN-SUFFIX,bard.google.com,Gemini
+- DOMAIN-SUFFIX,deepmind.com,Gemini
+- DOMAIN-SUFFIX,deepmind.google,Gemini
 
-# 必要的认证域名(精确匹配)
-DOMAIN,accounts.google.com
-DOMAIN,accounts.youtube.com
+# 2. 关键 API 与 后端服务 (最容易漏掉的部分)
+# ⚠️ 下面这几个必须走支持 Gemini 的节点，否则会报地区错误
+- DOMAIN-SUFFIX,generativelanguage.googleapis.com,Gemini
+- DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com,Gemini
+- DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com,Gemini
+- DOMAIN-SUFFIX,clients6.google.com,Gemini
+- DOMAIN-SUFFIX,apis.google.com,Gemini
+
+# 3. 账号与认证 (保持 IP 一致，防止跳验证)
+- DOMAIN,accounts.google.com,Gemini
+- DOMAIN,accounts.youtube.com,Gemini
+
+# 4. 关键字匹配 (作为兜底)
+- DOMAIN-KEYWORD,gemini,Gemini
+- DOMAIN-KEYWORD,bard,Gemini
