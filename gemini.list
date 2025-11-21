@@ -1,28 +1,30 @@
 # ==============================================
-# Google Gemini & AI Studio 专用规则集 (修复版)
+# Google Gemini & AI Studio 专用规则集 (优化版)
 # ==============================================
 
-# 1. 核心服务域名 (网页版与开发平台)
+# 1. 核心服务域名 (网页版、开发平台与文档)
 - DOMAIN-SUFFIX,gemini.google.com,Gemini
 - DOMAIN-SUFFIX,aistudio.google.com,Gemini
-- DOMAIN-SUFFIX,ai.google.dev,Gemini
 - DOMAIN-SUFFIX,makersuite.google.com,Gemini
-- DOMAIN-SUFFIX,bard.google.com,Gemini
-- DOMAIN-SUFFIX,deepmind.com,Gemini
+- DOMAIN-SUFFIX,ai.google.dev,Gemini
 - DOMAIN-SUFFIX,deepmind.google,Gemini
+- DOMAIN-SUFFIX,deepmind.com,Gemini
+- DOMAIN-SUFFIX,bard.google.com,Gemini
 
-# 2. 关键 API 与 后端服务 (最容易漏掉的部分)
-# ⚠️ 下面这几个必须走支持 Gemini 的节点，否则会报地区错误
+# 2. 关键 API 与 后端服务 (防地区检测核心)
 - DOMAIN-SUFFIX,generativelanguage.googleapis.com,Gemini
 - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com,Gemini
 - DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com,Gemini
-- DOMAIN-SUFFIX,clients6.google.com,Gemini
-- DOMAIN-SUFFIX,apis.google.com,Gemini
 
-# 3. 账号与认证 (保持 IP 一致，防止跳验证)
-- DOMAIN,accounts.google.com,Gemini
-- DOMAIN,accounts.youtube.com,Gemini
+# 3. 图片生成与上传支持 (Gemini 生成图片或上传图片分析时需要)
+- DOMAIN-SUFFIX,gemini.googleusercontent.com,Gemini
+# 注意：如果生成的图片无法加载，可能需要让整个 googleusercontent.com 走代理，通常由通用 Google 规则覆盖
 
-# 4. 关键字匹配 (作为兜底)
+# 4. 宽泛 API 规则 (可选 - 建议放在通用 Google 规则之前)
+# ⚠️ 如果遇到无法对话的问题，请启用下面这条，否则建议注释掉以避免影响 Google 相册等服务
+# - DOMAIN-SUFFIX,clients6.google.com,Gemini
+
+# 5. 关键字匹配 (兜底)
 - DOMAIN-KEYWORD,gemini,Gemini
+# bard 关键字已逐渐废弃，但保留无害
 - DOMAIN-KEYWORD,bard,Gemini
