@@ -22,7 +22,7 @@
 
 # 4. 宽泛 API 规则 (可选 - 建议放在通用 Google 规则之前)
 # ⚠️ 如果遇到无法对话的问题，请启用下面这条，否则建议注释掉以避免影响 Google 相册等服务
-# - DOMAIN-SUFFIX,clients6.google.com,Gemini
+ - DOMAIN-SUFFIX,clients6.google.com,Gemini
 
 # 5. 关键字匹配 (兜底)
 - DOMAIN-KEYWORD,gemini,Gemini
