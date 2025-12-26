@@ -239,12 +239,112 @@ payload:
   # 8. 终极防线：关键词匹配 (Keyword Blocking)
   # 拦截所有漏网的、新注册的、随机生成的域名
   # ==========================================
-  - DOMAIN-KEYWORD,porn
-  - DOMAIN-KEYWORD,hentai
-  - DOMAIN-KEYWORD,sex
-  - DOMAIN-KEYWORD,av
+  # ==========================================
+  # 8. 进阶核武器：品牌关键词 (Brand Keywords)
+  # 只要网址包含这些词，不管它加什么数字/后缀，通杀
+  # ==========================================
+  
+  # --- 核心通用词 (高频) ---
+  - DOMAIN-KEYWORD,porn       # 杀伤力极大
+  - DOMAIN-KEYWORD,sex        # 杀伤力极大
+  - DOMAIN-KEYWORD,av         # 杀伤力大 (注意：可能会误杀 av 杀毒软件官网，但在家用环境通常没事)
+  - DOMAIN-KEYWORD,hentai     # 变态/动漫色情
+  - DOMAIN-KEYWORD,fap        # 自慰 (如 fapster, fapello)
+  - DOMAIN-KEYWORD,fuck       # 脏话域名
+  - DOMAIN-KEYWORD,xxx        # 成人通用
+
+
+  # --- 欧美巨头品牌 (特征明显，放心用) ---
+  - DOMAIN-KEYWORD,pornhub
+  - DOMAIN-KEYWORD,brazzers
   - DOMAIN-KEYWORD,xvideos
   - DOMAIN-KEYWORD,xnxx
-  - DOMAIN-KEYWORD,jav
-  - DOMAIN-KEYWORD,xhaccess
   - DOMAIN-KEYWORD,xhamster
+  - DOMAIN-KEYWORD,xhaccess   # 您刚才发现的
+  - DOMAIN-KEYWORD,youporn
+  - DOMAIN-KEYWORD,redtube
+  - DOMAIN-KEYWORD,bangbros
+  - DOMAIN-KEYWORD,naughtyamerica
+  - DOMAIN-KEYWORD,realitykings
+  - DOMAIN-KEYWORD,teamskeet
+  - DOMAIN-KEYWORD,fakehub
+  - DOMAIN-KEYWORD,twistys
+  - DOMAIN-KEYWORD,evilangel
+  - DOMAIN-KEYWORD,digitalplayground
+  - DOMAIN-KEYWORD,mofos
+  - DOMAIN-KEYWORD,phncdn     # Pornhub 的图片服务器
+  - DOMAIN-KEYWORD,xhcdn      # xHamster 的图片服务器
+
+  # --- 知名 Tube 站 & 变种 ---
+  - DOMAIN-KEYWORD,spankbang
+  - DOMAIN-KEYWORD,eporner
+  - DOMAIN-KEYWORD,hqporner
+  - DOMAIN-KEYWORD,beeg
+  - DOMAIN-KEYWORD,daftsex
+  - DOMAIN-KEYWORD,motherless
+  - DOMAIN-KEYWORD,txxx
+  - DOMAIN-KEYWORD,drtuber
+  - DOMAIN-KEYWORD,tnaflix
+  - DOMAIN-KEYWORD,empflix
+  - DOMAIN-KEYWORD,cumlouder
+  - DOMAIN-KEYWORD,thumbzilla
+  - DOMAIN-KEYWORD,tubegalore
+  - DOMAIN-KEYWORD,upornia
+  - DOMAIN-KEYWORD,anysex
+  - DOMAIN-KEYWORD,gotporn
+  - DOMAIN-KEYWORD,yesporn
+  - DOMAIN-KEYWORD,vjav
+  - DOMAIN-KEYWORD,sleazyneasy
+
+  # --- 直播类 (Live Cams) ---
+  - DOMAIN-KEYWORD,chaturbate
+  - DOMAIN-KEYWORD,bongacams
+  - DOMAIN-KEYWORD,livejasmin
+  - DOMAIN-KEYWORD,camsoda
+  - DOMAIN-KEYWORD,myfreecams
+  - DOMAIN-KEYWORD,stripchat
+  - DOMAIN-KEYWORD,imlive
+  - DOMAIN-KEYWORD,flirt4free
+  - DOMAIN-KEYWORD,jerkmate
+
+  # --- 亚洲/JAV/中文 (极其容易出现数字变种) ---
+  - DOMAIN-KEYWORD,javbus
+  - DOMAIN-KEYWORD,javlibrary
+  - DOMAIN-KEYWORD,javdb
+  - DOMAIN-KEYWORD,jable
+  - DOMAIN-KEYWORD,missav
+  - DOMAIN-KEYWORD,supjav
+  - DOMAIN-KEYWORD,netflav
+  - DOMAIN-KEYWORD,avgle
+  - DOMAIN-KEYWORD,91porn
+  - DOMAIN-KEYWORD,t66y       # 草榴
+  - DOMAIN-KEYWORD,sehuatang  # 色花堂
+  - DOMAIN-KEYWORD,hjd2048
+  - DOMAIN-KEYWORD,javmost
+  - DOMAIN-KEYWORD,jav321
+  - DOMAIN-KEYWORD,hpjav
+  - DOMAIN-KEYWORD,madou      # 麻豆 (注意：可能会误杀台湾麻豆区的旅游网站，但几率较小)
+  - DOMAIN-KEYWORD,cableav
+
+  # --- 二次元/动漫 (Hentai) ---
+  - DOMAIN-KEYWORD,nhentai
+  - DOMAIN-KEYWORD,e-hentai
+  - DOMAIN-KEYWORD,exhentai
+  - DOMAIN-KEYWORD,hanime
+  - DOMAIN-KEYWORD,pururin
+  - DOMAIN-KEYWORD,gelbooru
+  - DOMAIN-KEYWORD,rule34     # 著名色情法则
+  - DOMAIN-KEYWORD,sankaku
+  - DOMAIN-KEYWORD,tsumino
+  - DOMAIN-KEYWORD,fakku
+  - DOMAIN-KEYWORD,8muses
+  - DOMAIN-KEYWORD,wnacg
+  - DOMAIN-KEYWORD,18comic
+  - DOMAIN-KEYWORD,jmcomic
+
+  # --- 其他特定平台 ---
+  - DOMAIN-KEYWORD,onlyfans
+  - DOMAIN-KEYWORD,fansly
+  - DOMAIN-KEYWORD,theporndude
+  - DOMAIN-KEYWORD,thisvid
+  - DOMAIN-KEYWORD,redgifs
