@@ -383,5 +383,5 @@ payload:
   # ==========================================
   - DOMAIN-KEYWORD,sex        # ⚠️ 会拦截 Essex, Sussex 等地名
   - DOMAIN-KEYWORD,xxx        # ⚠️ 会拦截 xxx.archive.org
-  - DOMAIN-KEYWORD,av         # ⚠️ 会拦截 AV 设备厂商
+  #- DOMAIN-KEYWORD,av         # ⚠️ 会拦截 AV 设备厂商
   - DOMAIN-KEYWORD,fuck       # ⚠️ 可能误杀论坛/社交媒体
