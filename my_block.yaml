@@ -30,7 +30,7 @@ payload:
   - DOMAIN-SUFFIX,evilangel.com
   - DOMAIN-SUFFIX,digitalplayground.com
   - DOMAIN-SUFFIX,twistys.com
-
+  - DOMAIN-SUFFIX,pornovo.com
   # ==========================================
   # 2. 第二梯队高流量 Tube 站 (欧美长尾)
   # 搜索结果第 2-10 页常客
@@ -252,8 +252,7 @@ payload:
   - DOMAIN-KEYWORD,fap        # 自慰 (如 fapster, fapello)
   - DOMAIN-KEYWORD,fuck       # 脏话域名
   - DOMAIN-KEYWORD,xxx        # 成人通用
-
-
+  - DOMAIN-KEYWORD,pornovo        # 这个总是漏网之鱼
   # --- 欧美巨头品牌 (特征明显，放心用) ---
   - DOMAIN-KEYWORD,pornhub
   - DOMAIN-KEYWORD,brazzers
