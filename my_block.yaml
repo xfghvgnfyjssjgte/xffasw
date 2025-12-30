@@ -271,7 +271,7 @@ payload:
   # 核心通用词（低风险）
   - DOMAIN-KEYWORD,porn
   - DOMAIN-KEYWORD,hentai
-  - DOMAIN-KEYWORD,fap
+ 
 
   # 欧美巨头品牌
   - DOMAIN-KEYWORD,pornhub
