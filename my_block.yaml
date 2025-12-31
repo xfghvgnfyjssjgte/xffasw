@@ -381,19 +381,37 @@ payload:
   # 11. 激进规则（可选，默认注释）
   # 取消注释前请评估影响
   # ==========================================
-  - DOMAIN-KEYWORD,sex        # ⚠️ 会拦截 Essex, Sussex 等地名
-  - DOMAIN-KEYWORD,xxx        # ⚠️ 会拦截 xxx.archive.org
-  #- DOMAIN-KEYWORD,av         # ⚠️ 会拦截 AV 设备厂商
-  - DOMAIN-KEYWORD,fuck       # ⚠️ 可能误杀论坛/社交媒体
-  #今日头条中广告
-# 巨量引擎广告转化追踪
+# === 度小满/百度金融相关 ===
+  # 核心广告/借贷接口
+  - DOMAIN-SUFFIX,duxiaoman.com
+  - DOMAIN-SUFFIX,dxmstatic.com
+  # 度小满CDN/静态资源 (日志中大量出现)
+  - DOMAIN,dxm-xd-xcloan.cdn.bcebos.com
+  - DOMAIN,plusjrmallstatic.bj.bcebos.com
+  - DOMAIN,ppui-static-wap.cdn.bcebos.com
+  
+  # === 拍拍贷相关 (日志中出现的 ppdai) ===
+  - DOMAIN-SUFFIX,ppdai.com
+  - DOMAIN-SUFFIX,ppdaicdn.com
+  
+  # === 借条/贷款相关 (日志中出现的 xjietiao) ===
+  - DOMAIN-SUFFIX,xjietiao.com
+  - DOMAIN,cdn.xjietiao.com
+
+  # === 字节跳动/穿山甲广告联盟 (核心补漏) ===
+  # 巨量引擎广告转化
   - DOMAIN,clue.oceanengine.com
   # 字节跳动短链追踪
   - DOMAIN,tr.byteurl.cn
   # 字节跳动数据分析
   - DOMAIN,lf3-analytics.bytescm.com
-  # 度小满金融/借贷广告 (拦截整个后缀)
-  - DOMAIN-SUFFIX,duxiaoman.com
-  # 今日头条日志上报 (转为后缀匹配，更精准)
+  # 广告SDK相关 (日志中大量直连)
+  - DOMAIN,mcs.snssdk.com
+  - DOMAIN,is.snssdk.com
+  # 广告/行为日志上报 (建议拦截)
   - DOMAIN-SUFFIX,applog-lf.toutiaoapi.com
   - DOMAIN-SUFFIX,misc-lf.toutiaoapi.com
+  
+  # === 其他广告联盟/追踪 ===
+  - DOMAIN,sdktt.data.tianwenca.com
+  - DOMAIN,nsclick.baidu.com
