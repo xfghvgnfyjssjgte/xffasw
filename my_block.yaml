@@ -385,3 +385,15 @@ payload:
   - DOMAIN-KEYWORD,xxx        # ⚠️ 会拦截 xxx.archive.org
   #- DOMAIN-KEYWORD,av         # ⚠️ 会拦截 AV 设备厂商
   - DOMAIN-KEYWORD,fuck       # ⚠️ 可能误杀论坛/社交媒体
+  #今日头条中广告
+# 巨量引擎广告转化追踪
+  - DOMAIN,clue.oceanengine.com
+  # 字节跳动短链追踪
+  - DOMAIN,tr.byteurl.cn
+  # 字节跳动数据分析
+  - DOMAIN,lf3-analytics.bytescm.com
+  # 度小满金融/借贷广告 (拦截整个后缀)
+  - DOMAIN-SUFFIX,duxiaoman.com
+  # 今日头条日志上报 (转为后缀匹配，更精准)
+  - DOMAIN-SUFFIX,applog-lf.toutiaoapi.com
+  - DOMAIN-SUFFIX,misc-lf.toutiaoapi.com
