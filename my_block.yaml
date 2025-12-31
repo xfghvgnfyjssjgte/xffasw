@@ -1,4 +1,36 @@
 payload:
+  # --- 1. 顽固网贷/金融系 ---
+  # 拍拍贷 (日志中极高频)
+  - DOMAIN-SUFFIX,ppdai.com
+  - DOMAIN-SUFFIX,ppdaicdn.com
+  # 信用飞
+  - DOMAIN-SUFFIX,xinyongfei.cn
+  - DOMAIN-SUFFIX,xinyongfei.com
+  # 360借条 (精准拦截广告RTA接口)
+  - DOMAIN,rtawin.daikuan.360.cn
+  # 马上消费/安逸花 (借贷)
+  - DOMAIN-SUFFIX,msxf.com
+  - DOMAIN-SUFFIX,anyihua.com
+
+  # --- 2. 字节跳动深层广告/电商/追踪 ---
+  # Pitaya 端侧智能广告计算 SDK (必须杀)
+  - DOMAIN,pitaya.bytedance.com
+  # 字节电商广告接口 (如果不购物可拦截)
+  - DOMAIN-SUFFIX,ecombdapi.com
+  # 字节供应链/追踪
+  - DOMAIN-SUFFIX,bytescm.com
+  # 穿山甲广告的新变种 (日志中出现)
+  - DOMAIN,api-access.pangolin-sdk-toutiao1.com
+  
+  # --- 3. 第三方推广/广告联盟 ---
+  # 途虎养车广告接口
+  - DOMAIN,mkt-advertisement.tuhu.cn
+  # 广告投放加速域名
+  - DOMAIN-SUFFIX,huixuanjiasu.com
+  # 茄子快传/奔跑 (广告联盟)
+  - DOMAIN-SUFFIX,qiezibenpao.com
+  # 天问数据 (追踪器)
+  - DOMAIN,sdktt.data.tianwenca.com
   # ==========================================
   # 1. 全球流量巨头 (MindGeek, WGCZ, Hamster)
   # ==========================================
