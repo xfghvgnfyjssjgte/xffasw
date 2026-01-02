@@ -1,0 +1,430 @@
+payload:
+  # > OpenAI.list（智能助理服务规则集）
+  # - 分类：智能助理 / AI 服务平台 / 云端推理接口
+  # - 更新时间：2026-01-01
+
+  # > OpenAI Chat 系列
+  - DOMAIN-SUFFIX,openai.com # OpenAI 官方主站域名
+  - DOMAIN-SUFFIX,chat.openai.com # ChatGPT Web 网页端
+  - DOMAIN-SUFFIX,api.openai.com # OpenAI 官方 API
+  - DOMAIN-SUFFIX,cdn.openai.com # OpenAI CDN
+  - DOMAIN-SUFFIX,platform.openai.com # 开发者平台
+  - DOMAIN-SUFFIX,chatgpt.com # ChatGPT 主域名
+  - DOMAIN-SUFFIX,ios.chat.openai.com # iOS 客户端
+  - DOMAIN-SUFFIX,android.chat.openai.com # Android 客户端
+  - DOMAIN-SUFFIX,ws.chatgpt.com # WebSocket 服务
+  - DOMAIN-SUFFIX,ab.chatgpt.com # A/B 测试
+  - DOMAIN-SUFFIX,oaiusercontent.com # 用户内容托管
+  - DOMAIN-SUFFIX,oaistatic.com # 静态资源
+  - DOMAIN-SUFFIX,persistent.oaistatic.com # 持久化静态资源
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net # Azure Edge CDN
+  - IP-CIDR,59.188.250.54/32 # Cloudflare 边缘
+  - IP-CIDR,31.13.95.18/32 # 高性能边缘节点
+  - IP-CIDR,108.160.163.112/32 # 通信中转
+  - IP-CIDR,31.13.95.169/32 # 实时对话 WebSocket
+  - IP-CIDR,108.160.166.61/32 # 流式传输
+  - IP-CIDR,108.160.167.156/32 # iOS 入口
+  - IP-CIDR,128.242.240.189/32 # 全球负载均衡
+  - IP-CIDR,185.45.7.189/32 # 服务出口
+  - IP-CIDR,173.255.209.47/32 # 基础设施
+  - IP-CIDR,104.244.46.63/32 # 实时对话
+  - IP-CIDR,69.171.247.32/32 # A/B 测试
+  - IP-CIDR,173.236.212.42/32 # 主域名通信
+  - IP-CIDR,69.171.242.11/32 # Web 会话
+  - IP-CIDR,104.18.39.21/32 # Cloudflare WS
+  - IP-CIDR,128.121.146.235/32 # iOS 通信
+
+  # > Sora
+  - DOMAIN-SUFFIX,sora.com
+
+  # > Grok (xAI)
+  - DOMAIN-SUFFIX,x.ai
+  - DOMAIN-SUFFIX,grok.x.ai
+  - DOMAIN-SUFFIX,chat.grok.x.ai
+  - DOMAIN-SUFFIX,grok.x.com
+  - DOMAIN-SUFFIX,xusercontent.com
+  - DOMAIN-SUFFIX,api.grok.x.ai
+  - DOMAIN-SUFFIX,cdn.x.ai
+  - DOMAIN-SUFFIX,grok.com
+
+  # > Meta AI
+  - DOMAIN-SUFFIX,meta.ai
+  - DOMAIN-SUFFIX,ai.meta.com
+  - DOMAIN-SUFFIX,llama.meta.com
+  - DOMAIN-SUFFIX,meta-llama.com
+  - DOMAIN-SUFFIX,llama.com
+  - DOMAIN-SUFFIX,llama.dev
+  - DOMAIN-SUFFIX,facebookai.com
+  - DOMAIN-SUFFIX,fbai.net
+  - DOMAIN-SUFFIX,ai.facebook.com
+  - DOMAIN-SUFFIX,research.fb.com
+  - DOMAIN-SUFFIX,about.fb.com
+  - DOMAIN-SUFFIX,developers.facebook.com
+
+  # > Claude
+  - DOMAIN-SUFFIX,claude.com
+  - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN-SUFFIX,api.anthropic.com
+  - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,api.claude.ai
+  - DOMAIN-SUFFIX,api.claude.com
+  - DOMAIN-SUFFIX,claudeusercontent.com
+  - DOMAIN-SUFFIX,assets.claude.ai
+  - DOMAIN-SUFFIX,cdn.claude.ai
+  - DOMAIN-SUFFIX,events.claude.ai
+  - DOMAIN-SUFFIX,console.anthropic.com
+  - DOMAIN-SUFFIX,developer.anthropic.com
+  - DOMAIN-SUFFIX,docs.anthropic.com
+  - DOMAIN-SUFFIX,status.anthropic.com
+  - DOMAIN-SUFFIX,claude.io
+  - DOMAIN-SUFFIX,anthropicstatus.com
+  - DOMAIN-SUFFIX,claude.site
+
+  # > Anthropic (信任/文档/资源)
+  - DOMAIN-SUFFIX,trust.anthropic.com
+  - DOMAIN-SUFFIX,legal.anthropic.com
+  - DOMAIN-SUFFIX,privacy.anthropic.com
+  - DOMAIN-SUFFIX,status.anthropic.com
+  - DOMAIN-SUFFIX,console.anthropic.com
+  - DOMAIN-SUFFIX,developer.anthropic.com
+  - DOMAIN-SUFFIX,docs.anthropic.com
+  - DOMAIN-SUFFIX,resources.anthropic.com
+  - DOMAIN-SUFFIX,assets.anthropic.com
+  - DOMAIN-SUFFIX,cdn.anthropic.com
+
+  # > Gemini / Bard (Google AI)
+  - DOMAIN-SUFFIX,gemini.google.com
+  - DOMAIN-SUFFIX,bard.google.com
+  - DOMAIN-SUFFIX,generativeai.google
+  - DOMAIN-SUFFIX,generative-language.googleapis.com
+  - DOMAIN-SUFFIX,ai.google.dev
+  - DOMAIN-SUFFIX,makersuite.google.com
+  - DOMAIN-SUFFIX,palm.googleapis.com
+  - DOMAIN-SUFFIX,proto.googleapis.com
+  - DOMAIN-SUFFIX,staging-bard.google.com
+  - DOMAIN-SUFFIX,ai.googleblog.com
+  - DOMAIN-SUFFIX,deepmind.google
+
+  # > Copilot (Microsoft)
+  - DOMAIN-SUFFIX,copilot.microsoft.com
+  - DOMAIN-SUFFIX,copilot.azureedge.net
+  - DOMAIN-SUFFIX,edge.microsoft.com
+  - DOMAIN-SUFFIX,bingcopilot.microsoft.com
+  - DOMAIN-SUFFIX,bingapis.com
+  - DOMAIN-SUFFIX,api.bing.microsoft.com
+  - DOMAIN-SUFFIX,assets.msn.com
+  - DOMAIN-SUFFIX,msftauth.net
+  - DOMAIN-SUFFIX,live.com
+  - DOMAIN-SUFFIX,graph.microsoft.com
+  - DOMAIN-SUFFIX,sharepoint.com
+  - DOMAIN-SUFFIX,onenote.com
+  - DOMAIN-SUFFIX,onerev.microsoft.com
+  - DOMAIN-SUFFIX,contoso.com
+
+  # > Perplexity AI
+  - DOMAIN-SUFFIX,perplexity.ai
+  - DOMAIN-SUFFIX,api.perplexity.ai
+  - DOMAIN-SUFFIX,pplx.ai
+  - DOMAIN-SUFFIX,perplexitylabs.ai
+  - DOMAIN-SUFFIX,perplexitychat.ai
+  - DOMAIN-SUFFIX,pplx-res.cloudinary.com
+
+  # > HuggingFace
+  - DOMAIN-SUFFIX,huggingface.co
+  - DOMAIN-SUFFIX,inference-api.com
+  - DOMAIN-SUFFIX,cdn-lfs.huggingface.co
+  - DOMAIN-SUFFIX,huggingfaceusercontent.com
+  - DOMAIN-SUFFIX,huggingface.tech
+  - DOMAIN-SUFFIX,hf.co
+  - DOMAIN-SUFFIX,api.endpoints.huggingface.cloud
+  - DOMAIN-SUFFIX,assets.huggingface.co
+  - DOMAIN-SUFFIX,models.huggingface.co
+  - DOMAIN-SUFFIX,datasets.huggingface.co
+  - DOMAIN-SUFFIX,spaces.huggingface.co
+
+  # > Poe (Quora)
+  - DOMAIN-SUFFIX,poe.com
+  - DOMAIN-SUFFIX,api.poe.com
+  - DOMAIN-SUFFIX,poecdn.net
+  - DOMAIN-SUFFIX,poeusercontent.com
+  - DOMAIN-SUFFIX,quora.com
+  - DOMAIN-SUFFIX,quoracdn.net
+
+  # > Mistral AI
+  - DOMAIN-SUFFIX,mistral.ai
+  - DOMAIN-SUFFIX,api.mistral.ai
+  - DOMAIN-SUFFIX,console.mistral.ai
+  - DOMAIN-SUFFIX,docs.mistral.ai
+  - DOMAIN-SUFFIX,cdn.mistral.ai
+  - DOMAIN-SUFFIX,mistral-embed.run
+  - DOMAIN-SUFFIX,mistral-medium.run
+
+  # > Haruka AI
+  - DOMAIN-SUFFIX,haruka.ai
+  - DOMAIN-SUFFIX,ai.haruka.cloud
+  - DOMAIN-SUFFIX,api.ai.haruka.cloud
+  - DOMAIN-SUFFIX,cdn.ai.haruka.cloud
+  - DOMAIN-SUFFIX,assets.ai.haruka.cloud
+  - DOMAIN-SUFFIX,haruka.cloud
+
+  # > Cohere AI
+  - DOMAIN-SUFFIX,cohere.ai
+  - DOMAIN-SUFFIX,api.cohere.ai
+  - DOMAIN-SUFFIX,cohere.com
+  - DOMAIN-SUFFIX,os.cohere.ai
+  - DOMAIN-SUFFIX,coral.cohere.com
+  - DOMAIN-SUFFIX,studio.cohere.com
+  - DOMAIN-SUFFIX,docs.cohere.com
+
+  # > Voyage AI
+  - DOMAIN-SUFFIX,voyageai.com
+  - DOMAIN-SUFFIX,api.voyageai.com
+  - DOMAIN-SUFFIX,cdn.voyageai.com
+  - DOMAIN-SUFFIX,docs.voyageai.com
+  - DOMAIN-SUFFIX,console.voyageai.com
+
+  # > AI21 Labs
+  - DOMAIN-SUFFIX,ai21.com
+  - DOMAIN-SUFFIX,api.ai21.com
+  - DOMAIN-SUFFIX,studio.ai21.com
+  - DOMAIN-SUFFIX,docs.ai21.com
+  - DOMAIN-SUFFIX,platform.ai21.com
+  - DOMAIN-SUFFIX,cdn.ai21.com
+
+  # > Midjourney
+  - DOMAIN-SUFFIX,midjourney.com
+  - DOMAIN-SUFFIX,cdn.midjourney.com
+  - DOMAIN-SUFFIX,midjourney.ghost.io
+
+  # > Runway
+  - DOMAIN-SUFFIX,runwayml.com
+  - DOMAIN-SUFFIX,app.runwayml.com
+  - DOMAIN-SUFFIX,api.runwayml.com
+  - DOMAIN-SUFFIX,cdn.runwayml.com
+  - DOMAIN-SUFFIX,assets.runwayml.com
+  - DOMAIN-SUFFIX,media.runwayml.com
+  - DOMAIN-SUFFIX,files.runwayml.com
+  - DOMAIN-SUFFIX,genmo.runwayml.com
+  - DOMAIN-SUFFIX,render.runwayml.com
+
+  # > Stability AI
+  - DOMAIN-SUFFIX,stability.ai
+  - DOMAIN-SUFFIX,api.stability.ai
+  - DOMAIN-SUFFIX,platform.stability.ai
+  - DOMAIN-SUFFIX,stability.dev
+  - DOMAIN-SUFFIX,cdn.stability.ai
+  - DOMAIN-SUFFIX,stablediffusionapi.com
+  - DOMAIN-SUFFIX,clipdrop.co
+  - DOMAIN-SUFFIX,api.clipdrop.co
+
+  # > Pika
+  - DOMAIN-SUFFIX,pika.art
+  - DOMAIN-SUFFIX,api.pika.art
+  - DOMAIN-SUFFIX,cdn.pika.art
+  - DOMAIN-SUFFIX,assets.pika.art
+  - DOMAIN-SUFFIX,pika-realtime-prod.onrender.com
+  - DOMAIN-SUFFIX,storage.googleapis.com
+
+  # > Leonardo AI
+  - DOMAIN-SUFFIX,leonardo.ai
+  - DOMAIN-SUFFIX,api.leonardo.ai
+  - DOMAIN-SUFFIX,cloud.leonardo.ai
+  - DOMAIN-SUFFIX,cdn.leonardo.ai
+  - DOMAIN-SUFFIX,static.leonardo.ai
+  - DOMAIN-SUFFIX,files.leonardo.ai
+
+  # > Krea AI
+  - DOMAIN-SUFFIX,krea.ai
+  - DOMAIN-SUFFIX,api.krea.ai
+  - DOMAIN-SUFFIX,cdn.krea.ai
+  - DOMAIN-SUFFIX,assets.krea.ai
+  - DOMAIN-SUFFIX,files.krea.ai
+
+  # > Luma AI
+  - DOMAIN-SUFFIX,luma.com
+  - DOMAIN-SUFFIX,lumalabs.ai
+  - DOMAIN-SUFFIX,app.lumalabs.ai
+  - DOMAIN-SUFFIX,api.lumalabs.ai
+  - DOMAIN-SUFFIX,cdn.lumalabs.ai
+  - DOMAIN-SUFFIX,assets.lumalabs.ai
+  - DOMAIN-SUFFIX,files.lumalabs.ai
+  - DOMAIN-SUFFIX,static.cdn-luma.com
+  - DOMAIN-SUFFIX,storage.cdn-luma.com
+  - DOMAIN-SUFFIX,cdn.lu.ma
+  - DOMAIN-SUFFIX,images.lumacdn.com
+
+  # > Together AI
+  - DOMAIN-SUFFIX,together.ai
+  - DOMAIN-SUFFIX,api.together.ai
+  - DOMAIN-SUFFIX,app.together.ai
+  - DOMAIN-SUFFIX,cdn.together.ai
+  - DOMAIN-SUFFIX,assets.together.ai
+  - DOMAIN-SUFFIX,togethercomputer.com
+  - DOMAIN-SUFFIX,togetherlabs.com
+  - DOMAIN-SUFFIX,prod-api.together.ai
+  - DOMAIN-SUFFIX,static.together.ai
+
+  # > Groq
+  - DOMAIN-SUFFIX,groq.com
+  - DOMAIN-SUFFIX,groqcloud.ai
+  - DOMAIN-SUFFIX,api.groq.com
+  - DOMAIN-SUFFIX,console.groq.com
+  - DOMAIN-SUFFIX,docs.groq.com
+  - DOMAIN-SUFFIX,cdn.groq.com
+  - DOMAIN-SUFFIX,assets.groq.com
+  - DOMAIN-SUFFIX,status.groq.com
+  - DOMAIN-SUFFIX,phte.groq.io
+
+  # > Modal
+  - DOMAIN-SUFFIX,modal.com
+  - DOMAIN-SUFFIX,modal.run
+  - DOMAIN-SUFFIX,api.modal.com
+  - DOMAIN-SUFFIX,modal-labs.com
+  - DOMAIN-SUFFIX,assets.modal.com
+  - DOMAIN-SUFFIX,cdn.modal.com
+  - DOMAIN-SUFFIX,console.modal.com
+  - DOMAIN-SUFFIX,modal-cdn.com
+
+  # > Replicate
+  - DOMAIN-SUFFIX,replicate.com
+  - DOMAIN-SUFFIX,api.replicate.com
+  - DOMAIN-SUFFIX,replicate.delivery
+  - DOMAIN-SUFFIX,replicatecdn.com
+  - DOMAIN-SUFFIX,cdn.replicate.com
+  - DOMAIN-SUFFIX,objects.replicate.com
+  - DOMAIN-SUFFIX,r8y.io
+  - DOMAIN-SUFFIX,replicate-fileupload.com
+  - DOMAIN-SUFFIX,static.replicateassets.com
+  - DOMAIN-SUFFIX,replicatestatus.com
+  - DOMAIN-SUFFIX,fonts.replicateassets.com
+
+  # > RunPod
+  - DOMAIN-SUFFIX,runpod.io
+  - DOMAIN-SUFFIX,api.runpod.ai
+  - DOMAIN-SUFFIX,runpod.ai
+  - DOMAIN-SUFFIX,imgs.runpod.io
+  - DOMAIN-SUFFIX,cdn.runpod.io
+  - DOMAIN-SUFFIX,runpodusercontent.com
+  - DOMAIN-SUFFIX,files.runpod.io
+
+  # > Suno
+  - DOMAIN-SUFFIX,suno.com
+  - DOMAIN-SUFFIX,suno.ai
+  - DOMAIN-SUFFIX,app.suno.ai
+  - DOMAIN-SUFFIX,api.suno.ai
+  - DOMAIN-SUFFIX,cdn.suno.ai
+  - DOMAIN-SUFFIX,assets.suno.ai
+  - DOMAIN-SUFFIX,media.suno.ai
+  - DOMAIN-SUFFIX,files.suno.ai
+  - DOMAIN-SUFFIX,content.suno.run
+
+  # > ElevenLabs
+  - DOMAIN-SUFFIX,elevenlabs.io
+  - DOMAIN-SUFFIX,app.elevenlabs.io
+  - DOMAIN-SUFFIX,api.elevenlabs.io
+  - DOMAIN-SUFFIX,cdn.elevenlabs.io
+  - DOMAIN-SUFFIX,assets.elevenlabs.io
+  - DOMAIN-SUFFIX,voices.elevenlabs.io
+  - DOMAIN-SUFFIX,media.elevenlabs.io
+
+  # > HeyGen
+  - DOMAIN-SUFFIX,heygen.com
+  - DOMAIN-SUFFIX,app.heygen.com
+  - DOMAIN-SUFFIX,api.heygen.com
+  - DOMAIN-SUFFIX,cdn.heygen.com
+  - DOMAIN-SUFFIX,assets.heygen.com
+  - DOMAIN-SUFFIX,media.heygen.com
+  - DOMAIN-SUFFIX,files.heygen.com
+  - DOMAIN-SUFFIX,render.heygen.com
+  - DOMAIN-SUFFIX,static.heygen.ai
+
+  # > PlayHT
+  - DOMAIN-SUFFIX,play.ht
+  - DOMAIN-SUFFIX,play.ai
+  - DOMAIN-SUFFIX,app.play.ht
+  - DOMAIN-SUFFIX,api.play.ht
+  - DOMAIN-SUFFIX,cdn.play.ht
+  - DOMAIN-SUFFIX,assets.play.ht
+  - DOMAIN-SUFFIX,media.play.ht
+  - DOMAIN-SUFFIX,files.play.ht
+
+  # > LOVO.ai / Revoice
+  - DOMAIN-SUFFIX,lovo.ai
+  - DOMAIN-SUFFIX,app.lovo.ai
+  - DOMAIN-SUFFIX,api.lovo.ai
+  - DOMAIN-SUFFIX,cdn.lovo.ai
+  - DOMAIN-SUFFIX,assets.lovo.ai
+  - DOMAIN-SUFFIX,media.lovo.ai
+  - DOMAIN-SUFFIX,files.lovo.ai
+  - DOMAIN-SUFFIX,revoicer.com
+  - DOMAIN-SUFFIX,revoice.ai
+  - DOMAIN-SUFFIX,app.revoice.ai
+  - DOMAIN-SUFFIX,api.revoice.ai
+  - DOMAIN-SUFFIX,cdn.revoice.ai
+  - DOMAIN-SUFFIX,assets.revoice.ai
+  - DOMAIN-SUFFIX,media.revoice.ai
+  - DOMAIN-SUFFIX,files.revoice.ai
+
+  # > Synthesia
+  - DOMAIN-SUFFIX,synthesia.io
+  - DOMAIN-SUFFIX,app.synthesia.io
+  - DOMAIN-SUFFIX,api.synthesia.io
+  - DOMAIN-SUFFIX,cdn.synthesia.io
+  - DOMAIN-SUFFIX,assets.synthesia.io
+  - DOMAIN-SUFFIX,media.synthesia.io
+  - DOMAIN-SUFFIX,files.synthesia.io
+  - DOMAIN-SUFFIX,render.synthesia.io
+
+  # > Fable Studio
+  - DOMAIN-SUFFIX,fable-studio.com
+  - DOMAIN-SUFFIX,fable.app
+  - DOMAIN-SUFFIX,app.fable.app
+  - DOMAIN-SUFFIX,api.fable.app
+  - DOMAIN-SUFFIX,cdn.fable.app
+  - DOMAIN-SUFFIX,assets.fable.app
+  - DOMAIN-SUFFIX,media.fable.app
+  - DOMAIN-SUFFIX,files.fable.app
+  - DOMAIN-SUFFIX,showrunner.ai
+  - DOMAIN-SUFFIX,app.showrunner.ai
+  - DOMAIN-SUFFIX,api.showrunner.ai
+
+  # > Dola AI
+  - DOMAIN-SUFFIX,dola.com
+  - DOMAIN-SUFFIX,app.dola.com
+  - DOMAIN-SUFFIX,api.dola.com
+  - DOMAIN-SUFFIX,cdn.dola.com
+
+  # > Ciciai
+  - DOMAIN-SUFFIX,cici.com
+  - DOMAIN-SUFFIX,ciciai.com
+  - DOMAIN-SUFFIX,ciciaicdn.com
+  - DOMAIN-SUFFIX,sf-sf-flow-web-cdn-nontt.ciciaicdn.com
+  - DOMAIN-SUFFIX,sf-flow-web-cdn.ciciaicdn.com
+  - DOMAIN-SUFFIX,opt-i18n.ciciai.com
+  - DOMAIN-SUFFIX,vmweb-sg.ciciai.com
+  - DOMAIN-SUFFIX,mcs-sg.ciciai.com
+
+  # > AI Business
+  - DOMAIN-SUFFIX,aibusiness.com
+
+  # > Fireworks AI
+  - DOMAIN-SUFFIX,fireworks.ai
+  - DOMAIN-SUFFIX,api.fireworks.ai
+  - DOMAIN-SUFFIX,app.fireworks.ai
+  - DOMAIN-SUFFIX,docs.fireworks.ai
+  - DOMAIN-SUFFIX,cdn.fireworks.ai
+  - DOMAIN-SUFFIX,assets.fireworks.ai
+  - DOMAIN-SUFFIX,platform.fireworks.ai
+  - DOMAIN-SUFFIX,studio.fireworks.ai
+  - DOMAIN-SUFFIX,chat.fireworks.ai
+  - DOMAIN-SUFFIX,status.fireworks.ai
+
+  # > Tia AI
+  - DOMAIN-SUFFIX,tia-ai.com
+  - DOMAIN-SUFFIX,fast.tia-ai.com
+
+  # > OpenRouter
+  - DOMAIN-SUFFIX,openrouter.ai
+
+  # > Speechify
+  - DOMAIN-SUFFIX,speechify.com
